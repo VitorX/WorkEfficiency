@@ -1,0 +1,165 @@
+{
+   "chromeMetadata": {
+      "OS": "Windows 11 Version 23H2 (Build 22631.3737)",
+      "application": "Microsoft Edge",
+      "revision": "30e1b6cc72a8cf6df643b6a0f69884a4936488ba",
+      "version": "126.0.2592.68 (Official build) (64-bit)"
+   },
+   "policyValues": {
+      "chrome": {
+         "name": "Microsoft Edge Policies",
+         "policies": {
+            "AlwaysOpenPdfExternally": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": true
+            },
+            "AutoOpenFileTypes": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": [ "pdf", "docxxx", "png", "xlsx" ]
+            },
+            "AutoSelectCertificateForUrls": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": [ "{\"pattern\":\"https://bu2.testcompany.com\",\"filter\":{\"ISSUER\":{\"CN\":\"bu2.testcompany\"}}}", "{\"pattern\":\"https://bu1.testcompany.com\",\"filter\":{\"ISSUER\":{\"CN\":\"bu1.testcompany\"}}}", "{\"pattern\":\"https://testcompany.com\",\"filter\":{\"ISSUER\":{\"CN\":\"bu1.testcompany\"}}}" ]
+            },
+            "AutofillAddressEnabled": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": true
+            },
+            "ClickOnceEnabled": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": true
+            },
+            "DoNotSilentlyBlockProtocolsFromOrigins": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": [ {
+                  "allowed_origins": [ "teams.microsoft.com", "http://teams.microsoft.com:8080" ],
+                  "protocol": "spotify"
+               }, {
+                  "allowed_origins": [ "teams.microsoft.com", "https://.mail.microsoft.com" ],
+                  "protocol": "msteams"
+               }, {
+                  "allowed_origins": [ "*" ],
+                  "protocol": "msoutlook"
+               } ]
+            },
+            "ExperimentationAndConfigurationServiceControl": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": 2
+            },
+            "ExtensionInstallBlocklist": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": [ "oocalimimngaihdkbihfgmpkcpnmlaoa", "igbncjcgfkfnfgbaieiimpfkobabmkce", "gbnahglfafmhaehbdmjedfhdmimjcbed", "adikhbfjdbjkhelbdnffogkobkekkkej" ]
+            },
+            "HomepageLocation": {
+               "level": "recommended",
+               "scope": "machine",
+               "source": "platform",
+               "value": "https://www.contoso.com"
+            },
+            "InsecureContentAllowedForUrls": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": [ "[*.]testsiteaaa.com" ]
+            },
+            "InternetExplorerIntegrationCloudSiteList": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": "80f5ad94-bb13-4c0c-9fb3-d1920d9cbfaf"
+            },
+            "InternetExplorerIntegrationLevel": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": 1
+            },
+            "NewPDFReaderEnabled": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": true
+            },
+            "ProxySettings": {
+               "error": "Error at ProxySettings.ProxyMode: You must specify a value.",
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": {
+                  "ProxyMode1": "pac_script",
+                  "ProxyPacMandatory": false,
+                  "ProxyPacUrl": "http://www.contoso.com/example.pac"
+               }
+            },
+            "QuickViewOfficeFilesEnabled": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": true
+            },
+            "SmartScreenEnabled": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": true
+            },
+            "SmartScreenForTrustedDownloadsEnabled": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": false
+            },
+            "SmartScreenPuaEnabled": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": true
+            },
+            "URLBlocklist": {
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": [ "app.grammarly.com", "https://www.teamviewer.com/en/download/windows", "https://www.bitcomet.com/en/downloads", "https://www.malwarebytes.com/mwb-download/thankyou", "https://www.bittorrent.com/downloads/windows", "http://www.vuze.com/download.php", "https://www.utorrent.com/downloads/win", "grammarly.com/desktop", "browser.yandex.com", "browser.ru", "remotepc.com/download", "usa.kaspersky.com/downloads", "kaspersky.co.in/downloads", "ultraviewer.net/en/download.html", "https://anydesk.com/en/downloads/windows" ]
+            }
+         }
+      },
+      "extensions": {
+      },
+      "precedence": {
+         "name": "Policy Precedence",
+         "policies": {
+         },
+         "precedenceOrder": [ "Platform machine", "Cloud machine", "Platform user", "Cloud user" ]
+      },
+      "updater": {
+         "name": "Microsoft EdgeUpdate Policies",
+         "policies": {
+         }
+      }
+   },
+   "status": {
+      "updater": {
+         "policyDescriptionKey": "statusUpdater",
+         "timeSinceLastRefresh": "4 hours ago",
+         "version": "1.3.187.41"
+      },
+      "user": {
+      }
+   }
+}
