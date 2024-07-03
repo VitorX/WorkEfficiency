@@ -7,7 +7,7 @@ JQ command for windows
 By default jq.exe is installed in 'C:\msys64\usr\bin', add this path to the Windows enviroment system variables Path.
 
 ### List Edge Policies
->jq ".policyValues.chrome.policies|keys" samplePolicies
+>jq ".policyValues.chrome.policies|keys" samplePolicies.json
 
 ![alt text](images/image.png)
 
