@@ -9,10 +9,10 @@ By default jq.exe is installed in 'C:\msys64\usr\bin', add this path to the Wind
 ### List Edge Policies
 >jq ".policyValues.chrome.policies|keys" samplePolicies
 
-![alt text](images\image.png)
+![alt text](images/image.png)
 
 ### Show Edge policy 
 >jq ".policyValues.chrome.policies.HomepageLocation" samplePolicies.json
 
-![alt text](images\image-1.png)
+![alt text](images/image-1.png)
 
