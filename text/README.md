@@ -25,3 +25,13 @@ Required Packge: awk,sed
 [Command]
 
     tasklist |awk '{print $5}'|tail -n +4|sed 's/,//'|  awk '{sum+=$1;} END {print "total memory=", sum/1000000 ,"G" }'
+
+# Logpaser
+
+## [Usage1]Group by IIS logs by the HTTP status code
+    logparser -i:W3C "select sc-status,count(*) from *.log group by sc-status"
+
+![alt text](Images/image.png)
+
+## [Usage2]Group by IIS logs by the Request URL Path
+    logparser -i:W3C "select  cs-uri-stem,count(*) from *.log  where sc-status='500' group by cs-uri-stem"
