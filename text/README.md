@@ -35,3 +35,9 @@ Required Packge: awk,sed
 
 ## [Usage2]Group by IIS logs by the Request URL Path
     logparser -i:W3C "select  cs-uri-stem,count(*) from *.log  where sc-status='500' group by cs-uri-stem"
+
+
+# Grep
+
+## [Usage1]The text file is recoginzed as binary file,use the command below to search the text
+    cat file | tr -d '\000' | grep --color=always -i "keywords"
