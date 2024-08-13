@@ -16,3 +16,36 @@ By default jq.exe is installed in 'C:\msys64\usr\bin', add this path to the Wind
 
 ![alt text](images/image-1.png)
 
+
+### Windows map value for have
+#### Tips:exclamation:: On windows we need to use slash before '"' if it used nested
+    >jq "map(has(\"apple\"))" fruits.json
+
+
+### Select values
+    >jq ".[] | select(.price>0.5)" fruits.json
+
+
+### fruits.json Sample Data
+    [
+    {
+        "name": "apple",
+        "color": "green",
+        "price": 1.2
+    },
+    {
+        "name": "banana",
+        "color": "yellow",
+        "price": 0.5
+    },
+    {
+        "name": "kiwi",
+        "color": "green",
+        "price": 1.25
+    }
+    ]
+
+
+
+
+
