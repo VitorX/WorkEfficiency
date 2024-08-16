@@ -51,3 +51,9 @@ Required Packge: awk,sed
 
 ## [Usage2]Convert Windows path to Unix's path
     >cygpath -u .Demo\WIN32-MSVC\WIN32.sln
+
+
+# Set Windows Title from PowerShell and Windows Command
+>\>$Host.UI.RawUI.WindowTitle=Split-Path -Path $pwd -Leaf
+
+>\>title helloWorld
