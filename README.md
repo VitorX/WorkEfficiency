@@ -1,4 +1,4 @@
-# TextEfficiency
+# WorkEfficiency
 This repo is used to Write down the commands use on a daily basis to save life.
 
 ## MSYS2
