@@ -8,3 +8,20 @@
 Refer document
 
 [WebView2 browser flags](https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/webview-features-flags?tabs=dotnetcsharp)
+
+
+## Downgrade
+### Add following registry and repace the Edge version "132.0.2957.140" with yours
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "UpdateDefault" /t REG_DWORD /d 2 /f
+
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "RollbackToTargetVersion{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}" /t REG_DWORD /d 1 /f
+
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "TargetVersionPrefix{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}" /t REG_SZ /d "132.0.2957.140" /f
+### Access Edge://settings/help to manually update the Edge
+
+### Remove the registry after test
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "UpdateDefault" /f
+
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "RollbackToTargetVersion{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}" /f
+
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "TargetVersionPrefix{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}" /f
