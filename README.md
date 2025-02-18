@@ -12,7 +12,7 @@ Require to use MSYS2 to install the popular commands used in Linux for Windows
     >pacman -Ss w3m
 
 ### Catalogs
-[Widows command](./windows/command.md)
+[Widows command](./windows/)
 
 [Widows powershell](./windows/powershell.md)
 
