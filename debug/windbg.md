@@ -6,5 +6,7 @@
 
 ##  Use NETEXT dump socket info
     !wsocket
+## Set breakpoint for load specific dll
+    sxe ld Something.dll
 
 Refer to [netext](https://github.com/rodneyviana/netext) extension for more.

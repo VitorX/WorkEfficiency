@@ -31,3 +31,9 @@
 The below commands show the process information, but has different members
     ps |gm |grep -i --color=always id
     gwmi win32_process|gm |grep -i --color=always id
+
+# New-SelfSignedCertificate
+## Generate the selfsigned certificate for test purpose
+After run the following command, we also need to export the certificate and install the certificate to the "Trusted Root Certification Authorities"
+
+    New-SelfSignedCertificate -Type Custom -Subject "CN=cookiedemo" -dnsname "cookiedemo","testsite","testsite1" -KeyUsage DigitalSignature -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\localmachine\My" -FriendlyName "cookiedemo"
