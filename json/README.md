@@ -16,6 +16,9 @@ By default jq.exe is installed in 'C:\msys64\usr\bin', add this path to the Wind
 
 ![alt text](images/image-1.png)
 
+### Show Edge Sidebar name,id,extension_id.
+    jq  ".hub_apps.[]|.name,.id,.extension_id" ../../../desktop/sidebar.json
+
 
 ### Windows map value for have
 #### Tips:exclamation:: On windows we need to use slash before '"' if it used nested
