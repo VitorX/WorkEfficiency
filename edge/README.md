@@ -37,3 +37,6 @@ Refer document
     reg delete "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "UpdateDefault" /f
     reg delete "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "RollbackToTargetVersion{2CD8A007-E189-409D-A2C8-9AF4EF3C72AA}" /f
     reg delete "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" /v "TargetVersionPrefix{2CD8A007-E189-409D-A2C8-9AF4EF3C72AA}" /f
+
+## Start Edge with customizaed user data profile
+    msedge --user-data-dir="C:\users\<username>\desktop\testedgeprofile"
